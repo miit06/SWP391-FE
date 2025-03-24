@@ -1,1 +1,184 @@
-<p>home-page works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Childcare Center</title>
+    <style>
+        .logo-image {
+            max-width: 100px; /* Adjust logo size */
+        }
+
+        .section-title {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header d-flex align-items-center justify-content-between bg-primary text-white p-3">
+            <div class="logo">
+                <img src="assets/logo.png" alt="Childcare Center Logo" class="logo-image">
+            </div>
+            <nav class="navigation">
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link text-white" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="/about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="/services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="/blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="/contact">Contact</a></li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-light mx-1" href="/login">Login</a>
+                        <a class="btn btn-light mx-1" href="/signup">Sign Up</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="sliders my-4">
+            <h2 class="section-title text-center">Our Programs</h2>
+            <div id="programsCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="/programs/creative-arts">
+                            <img src="assets/creative-arts.jpg" alt="Creative Arts Program" class="d-block w-100">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Creative Arts Program</h3>
+                                <p>Encourages children to express themselves through painting, drawing, and crafting.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="/programs/nature-explorers">
+                            <img src="assets/nature-explorers.jpg" alt="Nature Explorers" class="d-block w-100">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Nature Explorers</h3>
+                                <p>Children embark on outdoor adventures, learning about plants and animals.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="/programs/early-literacy">
+                            <img src="assets/early-literacy.jpg" alt="Early Literacy Initiative" class="d-block w-100">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Early Literacy Initiative</h3>
+                                <p>Developing reading and writing skills through interactive storytelling sessions.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#programsCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#programsCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="most-used-services my-4">
+            <h2 class="section-title text-center">Most Used Services</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <a href="/services/after-school-care">
+                            <img src="assets/after-school-care.jpg" alt="After-School Care" class="card-img-top">
+                            <div class="card-body">
+                                <h3 class="card-title">After-School Care</h3>
+                                <p class="card-text">A safe environment for children aged 5-12 with activities and homework assistance.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <a href="/services/parenting-workshops">
+                            <img src="assets/parenting-workshops.jpg" alt="Parenting Workshops" class="card-img-top">
+                            <div class="card-body">
+                                <h3 class="card-title">Parenting Workshops</h3>
+                                <p class="card-text">Monthly workshops covering child development and effective communication.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <a href="/services/nutritious-meals">
+                            <img src="assets/nutritious-meals.jpg" alt="Nutritious Meal Plans" class="card-img-top">
+                            <div class="card-body">
+                                <h3 class="card-title">Nutritious Meal Plans</h3>
+                                <p class="card-text">Healthy, balanced meals designed for children's dietary needs.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hot-posts my-4">
+            <h2 class="section-title text-center">Latest News & Updates</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <a href="/blog/activities-for-kids">
+                            <img src="assets/activities-for-kids.jpg" alt="10 Fun Activities for Kids" class="card-img-top">
+                            <div class="card-body">
+                                <h3 class="card-title">10 Fun Activities for Kids at Home</h3>
+                                <p class="card-text">Explore creative and educational activities to keep your kids engaged.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <a href="/blog/outdoor-play-benefits">
+                            <img src="assets/outdoor-play.jpg" alt="The Importance of Outdoor Play" class="card-img-top">
+                            <div class="card-body">
+                                <h3 class="card-title">The Importance of Outdoor Play</h3>
+                                <p class="card-text">Discussing the benefits of outdoor play for children's health.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <a href="/blog/fostering-reading-love">
+                            <img src="assets/fostering-reading.jpg" alt="Fostering a Love for Reading" class="card-img-top">
+                            <div class="card-body">
+                                <h3 class="card-title">How to Foster a Love for Reading in Children</h3>
+                                <p class="card-text">Strategies for parents to instill a passion for reading.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="feedback my-4">
+            <h2 class="section-title text-center">We Value Your Feedback</h2>
+            <form class="text-center">
+                <div class="form-group">
+                    <textarea class="form-control" placeholder="Share your thoughts..." rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit Feedback</button>
+            </form>
+        </div>
+
+        <footer class="footer bg-primary text-white text-center p-3 mt-4">
+            <p>&copy; 2025 Our Childcare Center. All Rights Reserved.</p>
+            <p>Follow us on:
+                <a href="#" class="text-white">Facebook</a>,
+                <a href="#" class="text-white">Instagram</a>,
+                <a href="#" class="text-white">Twitter</a>
+            </p>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

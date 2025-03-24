@@ -1,9 +1,9 @@
 import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
-import { HomePageComponent } from './home-page/home-page.component';
+import { HomeComponent } from './home-page/home-page.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 export const routes: Routes = [
-    {path : '', component: HomePageComponent},
+    {path : '', component: HomeComponent},
     {path : 'login', component: LoginPageComponent}
 ];
 
